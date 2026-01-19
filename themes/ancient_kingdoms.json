@@ -1,0 +1,15 @@
+{
+  "name": "Ancient Kingdoms",
+  "description": "Royal colors of ancient African kingdoms - Kush, Axum, Mali, Songhai",
+  "bg": "#1A0B2E",
+  "text": "#FFD700",
+  "gradient_color": "#0F051A",
+  "water": "#4A148C",
+  "parks": "#6A1B9A",
+  "road_motorway": "#FFD700",
+  "road_primary": "#FFC107",
+  "road_secondary": "#9C27B0",
+  "road_tertiary": "#7B1FA2",
+  "road_residential": "#4A148C",
+  "road_default": "#6A1B9A"
+}
