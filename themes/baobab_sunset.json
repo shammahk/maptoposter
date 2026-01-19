@@ -1,0 +1,15 @@
+{
+  "name": "Baobab Sunset",
+  "description": "Iconic African baobab tree silhouetted against sunset - earth tones and amber sky",
+  "bg": "#3D2817",
+  "text": "#F4D03F",
+  "gradient_color": "#1F1309",
+  "water": "#6B8E23",
+  "parks": "#556B2F",
+  "road_motorway": "#F4D03F",
+  "road_primary": "#E67E22",
+  "road_secondary": "#C68642",
+  "road_tertiary": "#A0522D",
+  "road_residential": "#5D4E37",
+  "road_default": "#704214"
+}
