@@ -1,0 +1,15 @@
+{
+  "name": "Afrofuturism",
+  "description": "Blending African heritage with futuristic vision - metallics, deep purples, electric blues",
+  "bg": "#0A0E27",
+  "text": "#E0B0FF",
+  "gradient_color": "#050713",
+  "water": "#00CED1",
+  "parks": "#9D50BB",
+  "road_motorway": "#FFD700",
+  "road_primary": "#FF1493",
+  "road_secondary": "#00E5FF",
+  "road_tertiary": "#BA55D3",
+  "road_residential": "#4B0082",
+  "road_default": "#6A0DAD"
+}
