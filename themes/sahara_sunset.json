@@ -1,0 +1,15 @@
+{
+  "name": "Sahara Sunset",
+  "description": "Warm tones of the Sahara desert at sunset - sand, ochre, burnt orange",
+  "bg": "#2C1810",
+  "text": "#FFE5B4",
+  "gradient_color": "#1A0F08",
+  "water": "#8B7355",
+  "parks": "#A0826D",
+  "road_motorway": "#FFE5B4",
+  "road_primary": "#E97451",
+  "road_secondary": "#D2691E",
+  "road_tertiary": "#CD853F",
+  "road_residential": "#8B6F47",
+  "road_default": "#A0826D"
+}
