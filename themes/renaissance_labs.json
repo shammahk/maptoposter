@@ -1,0 +1,15 @@
+{
+  "name": "Renaissance Labs",
+  "description": "Renaissance Innovation Labs brand colors - primary: white, dark grey, bright blue. Supporting hues for depth.",
+  "bg": "#212120",
+  "text": "#ffffff",
+  "gradient_color": "#1a1a19",
+  "water": "#177ae5",
+  "parks": "#e3e4e5",
+  "road_motorway": "#177ae5",
+  "road_primary": "#ffffff",
+  "road_secondary": "#177ae5",
+  "road_tertiary": "#ffffff",
+  "road_residential": "#c7c9cc",
+  "road_default": "#e3e4e5"
+}
