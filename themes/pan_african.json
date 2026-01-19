@@ -1,0 +1,15 @@
+{
+  "name": "Pan-African",
+  "description": "Inspired by Pan-African colors - red (blood), black (people), green (land), gold (wealth)",
+  "bg": "#1A1A1A",
+  "text": "#FFD700",
+  "gradient_color": "#000000",
+  "water": "#006B3F",
+  "parks": "#228B22",
+  "road_motorway": "#FFD700",
+  "road_primary": "#C41E3A",
+  "road_secondary": "#8B0000",
+  "road_tertiary": "#FFD700",
+  "road_residential": "#4A4A4A",
+  "road_default": "#555555"
+}
