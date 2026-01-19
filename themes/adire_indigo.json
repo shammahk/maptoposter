@@ -1,0 +1,15 @@
+{
+  "name": "Adire Indigo",
+  "description": "Traditional West African indigo dye patterns - deep blues and white",
+  "bg": "#0D1F2D",
+  "text": "#E8F1F5",
+  "gradient_color": "#081520",
+  "water": "#1A3A52",
+  "parks": "#2E5266",
+  "road_motorway": "#9FC3D4",
+  "road_primary": "#6B9FB4",
+  "road_secondary": "#4A7C91",
+  "road_tertiary": "#34546B",
+  "road_residential": "#1F3A4A",
+  "road_default": "#2E4756"
+}
