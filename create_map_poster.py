@@ -16,7 +16,7 @@ FONTS_DIR = "fonts"
 POSTERS_DIR = "posters"
 
 def render_city_name_adaptive(ax, city_name, y_position=0.14, base_fontsize=80, 
-                              max_width_ratio=0.70, text_color='#000000'):Ï
+                              max_width_ratio=0.70, text_color='#000000'):
     """Render city name with automatic wrapping or font scaling."""
     temp_text = ax.text(0.5, y_position, city_name.upper(), 
                        ha='center', va='center', fontsize=base_fontsize, 
