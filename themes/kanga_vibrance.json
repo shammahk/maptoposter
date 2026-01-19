@@ -1,0 +1,15 @@
+{
+  "name": "Kanga Vibrance",
+  "description": "Vibrant colors of East and Southern African Kanga and Chitenge fabrics",
+  "bg": "#2D1B3D",
+  "text": "#FF6B35",
+  "gradient_color": "#1A0F28",
+  "water": "#00B4D8",
+  "parks": "#06A77D",
+  "road_motorway": "#FF6B35",
+  "road_primary": "#D946EF",
+  "road_secondary": "#F59E0B",
+  "road_tertiary": "#06B6D4",
+  "road_residential": "#6B5B95",
+  "road_default": "#805AD5"
+}
