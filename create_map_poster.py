@@ -15,6 +15,67 @@ THEMES_DIR = "themes"
 FONTS_DIR = "fonts"
 POSTERS_DIR = "posters"
 
+def render_city_name_adaptive(ax, city_name, y_position=0.14, base_fontsize=80, 
+                              max_width_ratio=0.70, text_color='#000000'):Ï
+    """Render city name with automatic wrapping or font scaling."""
+    temp_text = ax.text(0.5, y_position, city_name.upper(), 
+                       ha='center', va='center', fontsize=base_fontsize, 
+                       fontfamily='Roboto', fontweight='300',
+                       color=text_color, transform=ax.transAxes,
+                       zorder=11, alpha=0)
+    
+    ax.figure.canvas.draw()
+    bbox = temp_text.get_window_extent(renderer=ax.figure.canvas.get_renderer())
+    bbox_axes = bbox.transformed(ax.transAxes.inverted())
+    text_width = bbox_axes.width
+    temp_text.remove()
+    
+    if text_width <= max_width_ratio:
+        return ax.text(0.5, y_position, city_name.upper(), 
+                      ha='center', va='center', fontsize=base_fontsize, 
+                      fontfamily='Roboto', fontweight='300',
+                      color=text_color, transform=ax.transAxes,
+                      zorder=11, letterspacings='0.15em')
+    
+    scale_factor = max_width_ratio / text_width
+    scaled_fontsize = int(base_fontsize * scale_factor)
+    
+    if scaled_fontsize >= 40:
+        return ax.text(0.5, y_position, city_name.upper(), 
+                      ha='center', va='center', fontsize=scaled_fontsize, 
+                      fontfamily='Roboto', fontweight='300',
+                      color=text_color, transform=ax.transAxes,
+                      zorder=11, letterspacings='0.12em')
+    
+    words = city_name.split()
+    if len(words) == 1:
+        if '-' in city_name:
+            parts = city_name.split('-', 1)
+            line1, line2 = parts[0] + '-', parts[1]
+        else:
+            mid = len(city_name) // 2
+            line1, line2 = city_name[:mid], city_name[mid:]
+    else:
+        mid_point = len(words) // 2
+        line1 = ' '.join(words[:mid_point])
+        line2 = ' '.join(words[mid_point:])
+    
+    wrap_fontsize = min(base_fontsize * 0.75, 60)
+    line_spacing = 0.04
+    
+    texts = []
+    texts.append(ax.text(0.5, y_position + line_spacing, line1.upper(), 
+                        ha='center', va='center', fontsize=wrap_fontsize, 
+                        fontfamily='Roboto', fontweight='300',
+                        color=text_color, transform=ax.transAxes,
+                        zorder=11, letterspacings='0.10em'))
+    texts.append(ax.text(0.5, y_position - line_spacing, line2.upper(), 
+                        ha='center', va='center', fontsize=wrap_fontsize, 
+                        fontfamily='Roboto', fontweight='300',
+                        color=text_color, transform=ax.transAxes,
+                        zorder=11, letterspacings='0.10em'))
+    return texts
+
 def load_fonts():
     """
     Load Roboto fonts from the fonts directory.
@@ -289,8 +350,11 @@ def create_poster(city, country, point, dist, output_file):
     spaced_city = "  ".join(list(city.upper()))
 
     # --- BOTTOM TEXT ---
-    ax.text(0.5, 0.14, spaced_city, transform=ax.transAxes,
-            color=THEME['text'], ha='center', fontproperties=font_main, zorder=11)
+    render_city_name_adaptive(ax, city, y_position=0.14, 
+                         base_fontsize=80, max_width_ratio=0.80,
+                         text_color=THEME['text'])
+    # ax.text(0.5, 0.14, spaced_city, transform=ax.transAxes,
+    #         color=THEME['text'], ha='center', fontproperties=font_main, zorder=11)
     
     ax.text(0.5, 0.10, country.upper(), transform=ax.transAxes,
             color=THEME['text'], ha='center', fontproperties=font_sub, zorder=11)
