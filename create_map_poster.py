@@ -75,7 +75,7 @@ def render_city_name_adaptive(ax, city_name, y_position=0.14, base_fontsize=50,
                         zorder=11))
     texts.append(ax.text(0.5, y_position, line2.upper(), 
                         ha='center', va='center', fontsize=wrap_fontsize, 
-                        fontproperties=font_main
+                        fontproperties=font_main,
                         color=text_color, transform=ax.transAxes,
                         zorder=11))
     return texts
