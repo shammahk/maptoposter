@@ -1,0 +1,15 @@
+{
+  "name": "Ubuntu Spirit",
+  "description": "Warm, communal colors embodying Ubuntu philosophy - I am because we are",
+  "bg": "#3E2723",
+  "text": "#FFECB3",
+  "gradient_color": "#1C0F0D",
+  "water": "#4DB6AC",
+  "parks": "#81C784",
+  "road_motorway": "#FFB74D",
+  "road_primary": "#FF8A65",
+  "road_secondary": "#A1887F",
+  "road_tertiary": "#90A4AE",
+  "road_residential": "#795548",
+  "road_default": "#8D6E63"
+}
