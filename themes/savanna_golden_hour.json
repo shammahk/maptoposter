@@ -1,0 +1,15 @@
+{
+  "name": "Savanna Golden Hour",
+  "description": "Golden hour over African savanna - warm oranges, purples, and amber",
+  "bg": "#2C1F3A",
+  "text": "#F4A460",
+  "gradient_color": "#1A1225",
+  "water": "#6A5ACD",
+  "parks": "#8FBC8F",
+  "road_motorway": "#FFD700",
+  "road_primary": "#FF8C42",
+  "road_secondary": "#D4A574",
+  "road_tertiary": "#BA7BA1",
+  "road_residential": "#9B7EBD",
+  "road_default": "#7B6BA8"
+}
