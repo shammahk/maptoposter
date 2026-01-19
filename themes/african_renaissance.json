@@ -1,0 +1,15 @@
+{
+  "name": "African Renaissance",
+  "description": "Celebrating African innovation, rebirth, and forward movement - copper, gold, and vibrant greens",
+  "bg": "#1A1F2E",
+  "text": "#DAA520",
+  "gradient_color": "#0D1117",
+  "water": "#20B2AA",
+  "parks": "#32CD32",
+  "road_motorway": "#DAA520",
+  "road_primary": "#FF6347",
+  "road_secondary": "#4169E1",
+  "road_tertiary": "#8FBC8F",
+  "road_residential": "#708090",
+  "road_default": "#778899"
+}
