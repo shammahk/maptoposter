@@ -35,7 +35,7 @@ def render_city_name_adaptive(ax, city_name, y_position=0.14, base_fontsize=80,
                       ha='center', va='center', fontsize=base_fontsize, 
                       fontfamily='Roboto', fontweight='300',
                       color=text_color, transform=ax.transAxes,
-                      zorder=11, letterspacings='0.15em')
+                      zorder=11)
     
     scale_factor = max_width_ratio / text_width
     scaled_fontsize = int(base_fontsize * scale_factor)
@@ -45,7 +45,7 @@ def render_city_name_adaptive(ax, city_name, y_position=0.14, base_fontsize=80,
                       ha='center', va='center', fontsize=scaled_fontsize, 
                       fontfamily='Roboto', fontweight='300',
                       color=text_color, transform=ax.transAxes,
-                      zorder=11, letterspacings='0.12em')
+                      zorder=11)
     
     words = city_name.split()
     if len(words) == 1:
@@ -68,12 +68,12 @@ def render_city_name_adaptive(ax, city_name, y_position=0.14, base_fontsize=80,
                         ha='center', va='center', fontsize=wrap_fontsize, 
                         fontfamily='Roboto', fontweight='300',
                         color=text_color, transform=ax.transAxes,
-                        zorder=11, letterspacings='0.10em'))
+                        zorder=11))
     texts.append(ax.text(0.5, y_position - line_spacing, line2.upper(), 
                         ha='center', va='center', fontsize=wrap_fontsize, 
                         fontfamily='Roboto', fontweight='300',
                         color=text_color, transform=ax.transAxes,
-                        zorder=11, letterspacings='0.10em'))
+                        zorder=11))
     return texts
 
 def load_fonts():
